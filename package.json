@@ -1,0 +1,39 @@
+{
+  "name": "amp-syntax",
+  "displayName": "Amp",
+  "description": "Syntax highlighting for the Amp programming language.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amp-lang/vscode"
+  },
+  "homepage": "https://github.com/amp-lang/amp",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.76.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "amp",
+        "aliases": [
+          "Amp",
+          "amp"
+        ],
+        "extensions": [
+          ".amp"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "amp",
+        "scopeName": "source.amp",
+        "path": "./syntaxes/amp.tmLanguage.json"
+      }
+    ]
+  }
+}
